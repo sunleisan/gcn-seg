@@ -1,4 +1,5 @@
 import numpy as np
+import networkx as nx
 
 
 def basics():
@@ -45,6 +46,34 @@ def basics():
     print(input_feature)
     # 使用激活函数ReLU(start_input)
 
+
 # 空手道俱乐部应用
 # 构建一个GCN,不真正训练该网络, 进行随机初始化
 # networkx -> note
+
+zkx = nx.karate_club_graph()  # 获得图
+order = sorted(list(zkx.nodes()))  # 顶点0-33
+A = nx.to_numpy_matrix(zkx, nodelist=order)
+I1 = np.eye(zkx.number_of_nodes())
+A_hat = A + I1
+D_hat = np.array(np.sum(A_hat, axis=0))[0]
+D_hat = np.matrix(np.diag(D_hat))
+# 随机初始化权重
+W_1 = np.random.normal(loc=0, scale=1, size=(zkx.number_of_nodes(), 4))
+W_2 = np.random.normal(loc=0, size=(W_1.shape[1], 2))
+
+
+def gcn_layer(A_hat, D_hat, X, W):
+    return max((0, D_hat ** -1 * A_hat * X * W))
+
+
+# 使用单位矩阵作为X
+H1 = gcn_layer(A_hat, D_hat, I1, W_1)
+H2 = gcn_layer(A_hat, D_hat, H1, W_2)
+output = H2
+# 提取相互表征特征
+feature_representations = {
+    node: np.array(output)[node]
+    for node in zkx.nodes()
+}
+print(output)
