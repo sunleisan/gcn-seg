@@ -2,7 +2,30 @@
   <dictionary name="三石">
     <words>
       <w>anacoda</w>
+      <w>cala</w>
+      <w>cifar</w>
+      <w>conv</w>
+      <w>dataiter</w>
+      <w>fullyconn</w>
+      <w>imshow</w>
+      <w>jupyter</w>
+      <w>kaggle</w>
+      <w>latax</w>
+      <w>librosa</w>
       <w>networkx</w>
+      <w>nltk</w>
+      <w>nping</w>
+      <w>optim</w>
+      <w>pytorch</w>
+      <w>scipy</w>
+      <w>softmax</w>
+      <w>testiter</w>
+      <w>testloader</w>
+      <w>testset</w>
+      <w>torchvision</w>
+      <w>totchvision</w>
+      <w>trainloader</w>
+      <w>trainset</w>
     </words>
   </dictionary>
 </component>

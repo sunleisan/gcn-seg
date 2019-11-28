@@ -1,0 +1,40 @@
+# 训练数据
+## 神经网络1
+* 参数: 随机梯度下降法:lr=0.01 momentum=0.9 交叉熵损失函数
+* 过程: 训练2次,每次迭代数据,每次迭代batch_size=4,每2000次输入平均损失值
+* 数据 *
+[1, 2000] loss:2.143
+[1, 4000] loss:1.853
+[1, 6000] loss:1.676
+[1, 8000] loss:1.561
+[1,10000] loss:1.510
+[1,12000] loss:1.452
+[2, 2000] loss:1.391
+[2, 4000] loss:1.372
+[2, 6000] loss:1.328
+[2, 8000] loss:1.320
+[2,10000] loss:1.287
+[2,12000] loss:1.273
+Finished Training
+保存网络
+* 结论
+* 生成神经网络1
+# 测试数据
+## 网络:使用神经网络1
+* 过程:预测4张测试数据
+* 数据 *
+显示图片
+  cat  ship  ship plane
+Predicted:    cat  ship  ship  ship
+* 结论
+三张预测正确,一张预测错误
+## 未训练的网络预测
+* 数据 *
+显示图片
+  cat  ship  ship plane
+Predicted:    cat   cat   cat   cat
+* 结论
+预测正确率差
+## 使用神经网络1整体测试
+* 数据 *
+Accuracy of the network on the 10000 test images: 55 %
