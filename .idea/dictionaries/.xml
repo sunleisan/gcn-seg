@@ -6,12 +6,14 @@
       <w>cifar</w>
       <w>conv</w>
       <w>dataiter</w>
+      <w>figsize</w>
       <w>fullyconn</w>
       <w>imshow</w>
       <w>jupyter</w>
       <w>kaggle</w>
       <w>latax</w>
       <w>librosa</w>
+      <w>linreg</w>
       <w>networkx</w>
       <w>nltk</w>
       <w>nping</w>
