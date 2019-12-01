@@ -1,8 +1,9 @@
 > 计划安排
 * [gcn-简单实现](https://mp.weixin.qq.com/s/sg9O761F0KHAmCPOfMW_kQ)OK
-* 完成PyTorch入门教程
-* 完成curve-gcn工程运行
-* 完成动手学习深度学习PyTorch版本
+* 完成PyTorch入门教程 OK
+* 完成curve-gcn工程运行 OK
+* 完成动手学习深度学习PyTorch版本线性回归部分后续部分持续学习 OK
+* 完成PyTorch官方教程
 > pytorch
 [官网](https://pytorch.org/)
 [中文官方手册](https://pytorch-cn.readthedocs.io/zh/latest/)
@@ -65,3 +66,7 @@ Softmax是一个可以将输入映射成0-1之间的数,并且保证输出和为
 可以用于神经网络多分类来输出不同分类的取得概率
 互斥关系的多分类输出应该使用K个二分类器
 训练: 使用最大似然思路,输入值x的分类是y,则输出y的概率应尽可能大,则-y的概率应该尽可能小,构造损失函数-log(output_y)用于训练叫做softmax-loss
+## 2019.12.1
+10. Python基本数据格式
+11. [*,**使用](https://blog.csdn.net/yilovexing/article/details/80577510)
+可以用于传参:*传元组,**传字典

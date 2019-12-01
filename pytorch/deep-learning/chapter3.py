@@ -6,6 +6,7 @@ import numpy as np
 import random
 
 
+# [动手学习深度学习-PyTorch-网页](https://tangshusen.me/Dive-into-DL-PyTorch/#/)
 # 3.1.2.2 矢量计算表达式:同时对多个样本进行矢量计算
 def f31():
     a = torch.ones(1000)
@@ -109,4 +110,5 @@ def f32():
     print(true_w, w)
     print(true_b, b)
 
+# 线性回归简洁实现
 
